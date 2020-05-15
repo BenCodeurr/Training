@@ -1,4 +1,4 @@
-#Fri May 15 18:05:08 CEST 2020
-base.0=D\:\\CourseTraining\\FlutterTraining\\flutter_exercises\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Fri May 15 20:35:34 BST 2020
+base.0=C\:\\Users\\leenor\\AndroidStudioProjects\\Trainingn\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

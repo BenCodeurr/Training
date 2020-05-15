@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_excercises/pages/dashboard.dart';
 import 'package:flutter_excercises/services/model/covid_model.dart';
 import 'package:flutter_excercises/services/api/covid_api.dart';
+import 'package:flutter_excercises/services/repo/covid_repo.dart';
+import 'package:provider/provider.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -21,6 +23,7 @@ class _HomePageState extends State<HomePage> {
   
   @override
   Widget build(BuildContext context) {
+    CovidRepo covidRepo=Provider.of<CovidRepo>(context);
     return Scaffold(
       backgroundColor: Colors.blue,
       body: Column(
@@ -116,6 +119,7 @@ class _HomePageState extends State<HomePage> {
                     child: CircularProgressIndicator(backgroundColor: Colors.white,),
                   );
                 }
+                covidRepo.updateState(snapshot.data);
                 return GestureDetector(
                   onTap: () {
                     Navigator.push(context,
